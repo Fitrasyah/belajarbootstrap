@@ -1,0 +1,394 @@
+
+
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+
+/* Base body styling - default for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page-specific body backgrounds */
+body.index-page {
+    background-color: #E8F5E8;
+}
+
+body.menu-page {
+    background-color: #F5F5DC;
+}
+
+body.contact-page {
+    background-color: #E0F6FF;
+}
+
+/* Center alignment class */
+.center {
+    text-align: center;
+}
+
+/* ==============================
+   LOGO STYLING
+   ============================== */
+
+/* Default logo styling */
+.logo-table {
+    background-color: #90EE90;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+.logo-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.logo-text {
+    color: green;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Logo size variations */
+.logo-large {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-large .logo-text {
+    font-size: 12px;
+}
+
+.logo-small {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-small .logo-text {
+    font-size: 10px;
+}
+
+/* ==============================
+   TYPOGRAPHY
+   ============================== */
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: black;
+}
+
+.menu-page h2 {
+    margin: 15px 0;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    margin: 20px 0 15px 0;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+/* Text utilities */
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+.navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   HORIZONTAL LINES
+   ============================== */
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* ==============================
+   INDEX PAGE SPECIFIC STYLES
+   ============================== */
+
+/* Restaurant image placeholder */
+.restaurant-image {
+    width: 400px;
+    height: 250px;
+    background-color: #D2B48C;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+.restaurant-image td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.restaurant-image img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.image-caption {
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Quote styling */
+.quote {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Services list */
+ul {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+ul li {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+/* ==============================
+   MENU PAGE SPECIFIC STYLES
+   ============================== */
+
+/* Menu table styling */
+.menu-table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.menu-table th,
+.menu-table td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.menu-table th {
+    background-color: #F0E68C;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table column widths */
+.col-image {
+    width: 20%;
+    text-align: center;
+}
+
+.col-name {
+    width: 30%;
+}
+
+.col-price {
+    width: 15%;
+}
+
+.col-description {
+    width: 35%;
+}
+
+/* Menu item images */
+.menu-image {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+
+/* ==============================
+   CONTACT PAGE SPECIFIC STYLES
+   ============================== */
+
+/* Form styling */
+.contact-form {
+    margin: 20px 0;
+}
+
+.form-table {
+    border: 0;
+    border-collapse: separate;
+}
+
+.form-table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+/* Input styling */
+.form-input {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+.text-input {
+    width: 300px;
+}
+
+.textarea-input {
+    width: 320px;
+    height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+.submit-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.submit-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Empty row spacing for form */
+.form-spacer {
+    height: 10px;
+}
+
+/* ==============================
+   SHARED COMPONENTS
+   ============================== */
+
+/* Contact information table */
+.contact-table,
+.contact-info-table {
+    border: 0;
+    margin: 20px auto;
+}
+
+.contact-table td,
+.contact-info-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Social media links */
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: blue;
+    margin: 0 5px;
+}
+
+/* Default social links styling */
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact page social links styling (underlined by default) */
+.contact-page .social-links a {
+    text-decoration: underline;
+}
+
+.contact-page .social-links a:hover {
+    text-decoration: none;
+}
+
+/* Thank you message */
+.thank-you {
+    color: green;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.menu-page .footer {
+    margin: 20px 0;
+}
+
+/* ==============================
+   SPACING UTILITIES
+   ============================== */
+
+.spacing-large {
+    margin: 30px 0;
+}
+
+.spacing-medium {
+    margin: 20px 0;
+}
+
+.spacing-small {
+    margin: 10px 0;
+}
+
+.section-spacing {
+    margin: 15px 0;
+}

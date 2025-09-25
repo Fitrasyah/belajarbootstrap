@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pendaftaran</title>
+</head>
+<body bgcolor="#FFFACD">
+    <h3 align="center"><a href="formulir pendaftaran.html" color="purple">Formulir Pendaftaran</a> | <a href="tabelpeserta.html" color="purple">Tabel Peserta</a></h3>
+    <hr>
+    
+    <h2 align="center"><font color="#DDA0DD">Formulir Pendaftaran</font></h2>
+    
+    <form>
+        <!-- Data Pribadi -->
+        <fieldset bgcolor="#B19CD9">
+            <table bgcolor="#B19CD9" cellpadding="5" cellspacing="0" width="100%">
+                <tr>
+                    <td width="150"><strong>Nama</strong></td>
+                    <td><input type="text" name="nama" size="30"></td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Jenis Kelamin</strong></td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-Laki
+                        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Agama</strong></td>
+                    <td>
+                        <select name="agama">
+                            <optgroup label="Agama Mayoritas">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Khatolik">Khatolik</option>
+                            </optgroup>
+                            <optgroup label="Agama Lain">
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Tempat Lahir</strong></td>
+                    <td><input type="text" name="tempat_lahir" size="30"></td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Tanggal Lahir</strong></td>
+                    <td><input type="date" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Alamat</strong></td>
+                    <td><textarea name="alamat" rows="3" cols="40"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <!-- Pendidikan -->
+        <fieldset bgcolor="#F5DEB3">
+            <table bgcolor="#F5DEB3" cellpadding="5" cellspacing="0" width="100%">
+                <tr>
+                    <td width="150"><strong>SD</strong></td>
+                    <td>
+                        <input type="text" name="sd_nama" size="20" placeholder="Nama Sekolah">
+                        Masuk: <input type="date" name="sd_masuk">
+                        Keluar: <input type="date" name="sd_keluar">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>SMP</strong></td>
+                    <td>
+                        <input type="text" name="smp_nama" size="20" placeholder="Nama Sekolah">
+                        Masuk: <input type="date" name="smp_masuk">
+                        Keluar: <input type="date" name="smp_keluar">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>SMA</strong></td>
+                    <td>
+                        <input type="text" name="sma_nama" size="20" placeholder="Nama Sekolah">
+                        Masuk: <input type="date" name="sma_masuk">
+                        Keluar: <input type="date" name="sma_keluar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <!-- Pelatihan -->
+        <fieldset bgcolor="#B19CD9">
+            <table bgcolor="#B19CD9" cellpadding="5" cellspacing="0" width="100%">
+                <tr>
+                    <td width="150"><strong>Minat</strong></td>
+                    <td>
+                        <input type="checkbox" name="minat" value="HTML"> HTML
+                        <input type="checkbox" name="minat" value="CSS"> CSS
+                        <input type="checkbox" name="minat" value="JavaScript"> JavaScript
+                        <input type="checkbox" name="minat" value="PHP"> PHP
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150"><strong>Kompetensi</strong></td>
+                    <td>
+                        <input type="checkbox" name="kompetensi" value="HTML"> HTML
+                        <input type="checkbox" name="kompetensi" value="CSS"> CSS
+                        <input type="checkbox" name="kompetensi" value="JavaScript"> JavaScript
+                        <input type="checkbox" name="kompetensi" value="PHP"> PHP
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <!-- Pilihan Jurusan -->
+        <fieldset bgcolor="#F5DEB3">
+            <table bgcolor="#F5DEB3" cellpadding="5" cellspacing="0" width="100%">
+                <tr>
+                    <td width="150"><strong>Pilihan Jurusan</strong></td>
+                    <td>
+                        <select name="jurusan">
+                            <optgroup label="Teknik">
+                                <option value="Teknik Informatika">Teknik Informatika</option>
+                                <option value="Teknik Elektro">Teknik Elektro</option>
+                                <option value="Teknik Industri">Teknik Industri</option>
+                                <option value="Teknik Sipil">Teknik Sipil</option>
+                            </optgroup>
+                            <optgroup label="Ekonomi">
+                                <option value="Akutansi">Akutansi</option>
+                                <option value="Manajemen">Manajemen</option>
+                                <option value="Perbankan">Perbankan</option>
+                                <option value="Bisnis Digital">Bisnis Digital</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        
+        <!-- Tombol Submit dan Reset -->
+        <table cellpadding="5" cellspacing="0">
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
